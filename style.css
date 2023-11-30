@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+.background {
+  background-color: #0c1729;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 85vw;
+  height: 80vh;
+  background-color: #15273f;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.picture {
+  width: 100%;
+  height: 60%;
+}
+
+.picture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.main-content > p:nth-child(1) {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.main-content > p:nth-child(2) {
+  color: hsl(218, 7%, 48%);
+  margin-top: 20px;
+}
+
+.coin-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.coin-price .coin-icon {
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+
+.coin-price p:nth-child(1) {
+  color: #0bf9f7;
+}
+
+.coin-price .clock {
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+
+.coin-price p:nth-child(2) {
+  color: hsl(218, 7%, 48%);
+}
+
+hr {
+  margin-top: 10px;
+  border: 1px solid hsla(216, 5%, 42%, 0.215);
+}
+
+.footer {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.footer img {
+  width: 27px;
+  height: 27px;
+  object-fit: cover;
+  border: 2px solid white;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+
+.footer .text-1 {
+  color: hsl(218, 7%, 48%);
+  margin-right: 4px;
+}
+
+.footer .text-2 {
+  color: rgba(255, 255, 255, 0.801);
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 25vw;
+    height: 70vh;
+  }
+
+  hr {
+    margin-top: 20px;
+  }
+
+  .footer {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+  }
+
+  .footer img {
+    position: relative;
+    top: 1px;
+  }
+
+  .footer .text-1 {
+    color: hsl(218, 7%, 48%);
+    margin-right: 4px;
+  }
+
+  .footer .text-2 {
+    color: rgba(255, 255, 255, 0.801);
+  }
+}
